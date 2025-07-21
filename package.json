@@ -1,0 +1,21 @@
+{
+  "name": "vscode-phpstorm-theme",
+  "displayName": "PHPSTORM Theme",
+  "description": "Copy PHPSTORM Theme",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Copy PHPSTORM Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Copy PHPSTORM Theme-color-theme.json"
+      }
+    ]
+  }
+}

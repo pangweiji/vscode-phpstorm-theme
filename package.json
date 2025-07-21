@@ -2,7 +2,6 @@
   "name": "vscode-phpstorm-theme",
   "displayName": "PHPSTORM Theme",
   "description": "Copy PHPSTORM Theme",
-  "icon": "./images/icon.png",
   "version": "1.0.1",
   "publisher": "pangweiji",
   "galleryBanner": {

@@ -1,17 +1,23 @@
-// A launch configuration that launches the extension inside a new window
-// Use IntelliSense to learn about possible attributes.
-// Hover to view descriptions of existing attributes.
-// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
 {
-	"version": "0.2.0",
-	"configurations": [
-		{
-			"name": "Extension",
-			"type": "extensionHost",
-			"request": "launch",
-			"args": [
-				"--extensionDevelopmentPath=${workspaceFolder}"
-			]
-		}
-	]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Theme Debugger",
+      "type": "extensionHost",
+      "request": "launch",
+      "runtimeArgs": [
+        "--disable-extensions",  // 禁用其他扩展避免干扰
+        "--extensionDevelopmentPath=${workspaceFolder}"
+      ],
+      "args": [
+        "${workspaceFolder}/test-project",  // 主题测试工作区目录
+        "--enable-proposed-api",  // 支持实验性API
+        "--theme=PhpStorm Dark Theme"  // 启动时自动应用主题
+      ],
+      "env": {
+        "IS_THEME_DEBUG": "true"  // 可选：用于主题的特殊调试模式
+      },
+      "preLaunchTask": "vsce-package"  // 可选：自动打包的任务
+    }
+  ]
 }

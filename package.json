@@ -2,22 +2,40 @@
   "name": "vscode-phpstorm-theme",
   "displayName": "PHPSTORM Theme",
   "description": "Copy PHPSTORM Theme",
-  "version": "0.0.1",
+  "icon": "./images/icon.png",
+  "version": "1.0.1",
+  "publisher": "pangweiji",
+  "galleryBanner": {
+    "color": "#1e1f22",
+    "theme": "dark"
+  },
   "engines": {
-    "vscode": "^1.102.0"
+    "vscode": "^1.90.0"
   },
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "jetbrains",
+    "new dark",
+    "phpstorm",
+    "php"
+  ],
   "contributes": {
+    "configurationDefaults": {
+      "editor.bracketPairColorization.enabled": false
+    },
     "themes": [
       {
-        "label": "Copy PHPSTORM Theme",
+        "label": "PhpStorm Dark Theme",
         "uiTheme": "vs-dark",
-        "path": "./themes/Copy PHPSTORM Theme-color-theme.json"
+        "path": "./themes/Dark-Theme.json"
       }
     ]
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/pangweiji/vscode-phpstorm-theme.git"

@@ -17,5 +17,9 @@
         "path": "./themes/Copy PHPSTORM Theme-color-theme.json"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pangweiji/vscode-phpstorm-theme.git"
   }
 }
